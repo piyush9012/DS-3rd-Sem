@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct node                // Decleration of node
+struct node                // Declaration of node
 {
 	int data;
 	struct node *next;
@@ -14,7 +14,7 @@ void enqueue()      // Function to insert the element
 	int item;
 	printf("Enter the element\n");
 	scanf("%d", &item);
-	struct node *new;   // Decleration of pointer of node
+	struct node *new;   // Declaration of pointer of node
 	new = (struct node *)malloc(sizeof(struct node)); // Allocation of memeory to new node
 	new->data = item;
 	new->next = 0;
@@ -34,7 +34,7 @@ void enqueue()      // Function to insert the element
 void dequeue()      // Function to delete the element
 {
 	int item;
-	struct node *temp;      // Decleration of pointer of node
+	struct node *temp;      // Declaration of pointer of node
 	temp = front;
 	if(front==-1 && rear==-1)    // Check whether Queue is empty or not
 	{
@@ -80,7 +80,7 @@ void display()       // Function to display the queue
 	else
 	{
 		temp = front;
-		printf("Elments in Queue:\n");
+		printf("Elements in Queue:\n");
         	while(temp->next != front)
         	{
             		printf("%d\t", temp->data);
